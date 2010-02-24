@@ -3,7 +3,7 @@ tp_battery
 A small battery indicator for use in text- based status bars. (Like in WMII.)
 
 Sample usage:
-	tp_battery `cat /sys/class/power_supply/BAT0/energy_now` `cat /sys/class/power_supply/BAT0/energy_full` `cat /sys/class/power_supply/AC/online`
+	tp_battery $(cat /sys/class/power_supply/BAT0/energy_now) $(cat /sys/class/power_supply/BAT0/energy_full) $(cat /sys/class/power_supply/AC/online)
 
 Per default, tp_battery will display something like this:
 	+36% [####      ]
